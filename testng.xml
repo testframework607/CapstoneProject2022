@@ -4,9 +4,9 @@
   <test thread-count="5" name="Test">
   
     <classes>
-     <!--  <class name="com.qa.testscripts.RegistrationTest"/>-->
+     <class name="com.qa.testscripts.RegistrationTest"/>
      <class name="com.qa.testscripts.AutomationExcerciseHomePageTests"/>
-      <class name="com.qa.testrunner.TestRunner"/>
+     <class name="com.qa.testrunner.TestRunner"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

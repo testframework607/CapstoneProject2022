@@ -123,8 +123,6 @@ public class RegistrationTest extends BaseDriver {
 		lpage.getEmailTextBox().sendKeys(email);
 		RegistrationPage rpage = lpage.clickCreateAccount();
 
-		Assert.assertEquals(rpage.getTitle(), getContent("signuppage", "pagetitle"));
-
 		Assert.assertEquals(rpage.getNameTextBox().getAttribute("value"), name);
 
 		Assert.assertEquals(rpage.getEmailTextBox().getAttribute("value"), email);
@@ -154,7 +152,7 @@ public class RegistrationTest extends BaseDriver {
 		System.out.println(success.getSuccessMsgBox());
 
 		AutomationExcerciseHomePage homepage=success.clickContinueButton();
-		Assert.assertEquals(homepage.getcustomerName(),firstName);
+		Assert.assertEquals(homepage.getcustomerName(),name);
 		homepage.clickLogoutLink();
 
 		//delete account - clean up
